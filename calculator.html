@@ -1,0 +1,43 @@
+<!Doctype html>
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <title>CALCULATOR</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        
+        <section class="container">
+            <div>
+                <div>
+                  <input id="display-screen" type="text" values="" placeholder="Enter The Expression" onkeypress="keyValues(event); calcHistory();">
+                </div>
+                <div>
+                  <input id="output-screen" type="text" values=""  placeholder="output">
+                </div>
+                <section class="calculator-buttons">
+                    <input id="number-one" type="button" value="1" onclick="display(this)">
+                    <input id="number-two" type="button" value="2" onclick="display(this)">
+                    <input id="number-three" type="button" value="3" onclick="display(this)">
+                    <input class="operator" type="button" value="+"onclick="display(this)">
+                    <input id="number-four" type="button" value="4"onclick="display(this)">
+                    <input id="number-five" type="button" value="5"onclick="display(this)">
+                    <input id="number-six"type="button" value="6"onclick="display(this)">
+                    <input class="operator"  type="button" value="-"onclick="display(this)">
+                    <input id="number-seven" type="button" value="7"onclick="display(this)">
+                    <input id="number-eight" type="button" value="8"onclick="display(this)">
+                    <input id="number-nine" type="button" value="9"onclick="display(this)">
+                    <input class="operator"  type="button" value="*"onclick="display(this)">
+                    <input id="clear" type="button" value="clr" onclick="clearAll()">
+                    <input id="number-zero" type="button" value="0"onclick="display(this)">
+                    <input id="equals" type="button" value="="onclick="calculation(); calcHistory();">
+                    <input class="operator" type="button" value="/"onclick="display(this)">
+                </section>
+            </div>
+            <div class="history" id="historyContainer">
+                <h3>HISTORY</h3>
+            </div>
+            <script src="operations.js"></script>
+        </section>
+    </body>
+</html>
